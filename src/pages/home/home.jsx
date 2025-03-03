@@ -6,10 +6,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import img1 from '../../../../../React1/Hotel Dubai/app/src/assets/350x350 (1).png'
-import img2 from '../../../../../React1/Hotel Dubai/app/src/assets/428x573 (2).png'
-import img3 from '../../../../../JS/Js2Month2/FastCart2/Photos/Category-Headphone.png'
-import img4 from '../../../../../JS/Js2Month2/FastCart2/Photos/Category-SmartWatch.png'
+import img1 from '../../assets/350x350 (1).png'
+import img2 from '../../assets/428x573 (2).png'
 import jbl from '../../assets/speakerJBL.svg'
 import ps5 from '../../assets/ps5.svg'
 import speaker from '../../assets/speaker.svg'
