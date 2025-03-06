@@ -26,7 +26,7 @@ import speaker from '../../assets/speaker.svg';
 import woman from '../../assets/woman.svg';
 import perfume from '../../assets/perfume.svg';
 import swapper from '../../assets/Frame.png';
-import swapper2 from '../../assets/woman.svg';
+import swapper2 from '../../assets/fashion.jpg';
 import img11 from '../../assets/delivery.svg';
 import img12 from '../../assets/service.svg';
 import img13 from '../../assets/garranty.svg';
@@ -119,19 +119,19 @@ const Home = () => {
                             modules={[Autoplay, Pagination, Navigation, EffectFade]}
                             className="rounded-r-xl h-[500px] sm:rounded-none shadow-2xl"
                         >
-                            {/* Slide 1 */}
-                            <SwiperSlide className="bg-gradient-to-r from-purple-600 to-indigo-600">
+                            {/* Slide 1: New Season Arrivals */}
+                            <SwiperSlide className="bg-gradient-to-r from-purple-600 to-indigo-600 relative overflow-hidden">
                                 <div className="flex h-full">
-                                    <div className="w-1/2 flex flex-col justify-center p-10">
-                                        <h2 className="text-5xl font-bold mb-6 text-white">New Season Arrivals</h2>
-                                        <p className="mb-8 text-white/80 text-lg">
+                                    <div className="w-1/2 flex flex-col justify-center p-10 relative z-10">
+                                        <h2 className="text-5xl font-bold mb-6 text-white drop-shadow-lg">New Season Arrivals</h2>
+                                        <p className="mb-8 text-white/80 text-lg drop-shadow-lg">
                                             Discover the latest trends for your lifestyle
                                         </p>
-                                        <button className="bg-white text-purple-600 hover:bg-purple-700 hover:text-white py-3 px-8 rounded-full w-fit transition-all duration-300 shadow-lg">
+                                        <button className="bg-white text-purple-600 hover:bg-purple-700 hover:text-white py-3 px-8 rounded-full w-fit transition-all duration-300 shadow-lg hover:shadow-xl">
                                             Shop Now
                                         </button>
                                     </div>
-                                    <div className="w-1/2 flex items-center justify-center">
+                                    <div className="w-1/2 flex items-center justify-center relative z-10">
                                         <img
                                             src={swapper}
                                             alt="New collection"
@@ -139,21 +139,26 @@ const Home = () => {
                                         />
                                     </div>
                                 </div>
+                                {/* Animated Background Shapes */}
+                                <div className="absolute inset-0 z-0">
+                                    <div className="w-40 h-40 bg-purple-500/20 rounded-full absolute top-10 left-20 animate-float"></div>
+                                    <div className="w-60 h-60 bg-indigo-500/20 rounded-full absolute bottom-20 right-10 animate-float-delay"></div>
+                                </div>
                             </SwiperSlide>
 
-                            {/* Slide 2 */}
-                            <SwiperSlide className="bg-gradient-to-r from-amber-500 to-orange-500">
+                            {/* Slide 2: Tech Essentials */}
+                            <SwiperSlide className="bg-gradient-to-r from-amber-500 to-orange-500 relative overflow-hidden">
                                 <div className="flex h-full">
-                                    <div className="w-1/2 flex flex-col justify-center p-10">
-                                        <h2 className="text-5xl font-bold mb-6 text-white">Tech Essentials</h2>
-                                        <p className="mb-8 text-white/80 text-lg">
+                                    <div className="w-1/2 flex flex-col justify-center p-10 relative z-10">
+                                        <h2 className="text-5xl font-bold mb-6 text-white drop-shadow-lg">Tech Essentials</h2>
+                                        <p className="mb-8 text-white/80 text-lg drop-shadow-lg">
                                             Upgrade your gadgets with our premium selection
                                         </p>
-                                        <button className="bg-white text-amber-600 hover:bg-amber-700 hover:text-white py-3 px-8 rounded-full w-fit transition-all duration-300 shadow-lg">
+                                        <button className="bg-white text-amber-600 hover:bg-amber-700 hover:text-white py-3 px-8 rounded-full w-fit transition-all duration-300 shadow-lg hover:shadow-xl">
                                             Explore
                                         </button>
                                     </div>
-                                    <div className="w-1/2 flex items-center justify-center">
+                                    <div className="w-1/2 flex items-center justify-center relative z-10">
                                         <img
                                             src={img1}
                                             alt="Tech products"
@@ -161,27 +166,37 @@ const Home = () => {
                                         />
                                     </div>
                                 </div>
+                                {/* Animated Background Shapes */}
+                                <div className="absolute inset-0 z-0">
+                                    <div className="w-40 h-40 bg-amber-500/20 rounded-full absolute top-20 right-20 animate-float"></div>
+                                    <div className="w-60 h-60 bg-orange-500/20 rounded-full absolute bottom-10 left-10 animate-float-delay"></div>
+                                </div>
                             </SwiperSlide>
 
-                            {/* Slide 3 */}
-                            <SwiperSlide className="bg-gradient-to-r from-teal-600 to-cyan-600">
+                            {/* Slide 3: Fashion Forward */}
+                            <SwiperSlide className="bg-gradient-to-r from-teal-600 to-cyan-600 relative overflow-hidden">
                                 <div className="flex h-full">
-                                    <div className="w-1/2 flex flex-col justify-center p-10">
-                                        <h2 className="text-5xl font-bold mb-6 text-white">Fashion Forward</h2>
-                                        <p className="mb-8 text-white/80 text-lg">
+                                    <div className="w-1/2 flex flex-col justify-center p-10 relative z-10">
+                                        <h2 className="text-5xl font-bold mb-6 text-white drop-shadow-lg">Fashion Forward</h2>
+                                        <p className="mb-8 text-white/80 text-lg drop-shadow-lg">
                                             Elevate your style with our curated collections
                                         </p>
-                                        <button className="bg-white text-teal-600 hover:bg-teal-700 hover:text-white py-3 px-8 rounded-full w-fit transition-all duration-300 shadow-lg">
+                                        <button className="bg-white text-teal-600 hover:bg-teal-700 hover:text-white py-3 px-8 rounded-full w-fit transition-all duration-300 shadow-lg hover:shadow-xl">
                                             View Collection
                                         </button>
                                     </div>
-                                    <div className="w-1/2 flex items-center justify-center">
+                                    <div className="w-1/2 flex items-center justify-center relative z-10">
                                         <img
                                             src={swapper2}
                                             alt="Fashion items"
-                                            className="max-h-[700px] object-contain transform hover:scale-105 transition-transform duration-300"
+                                            className="max-h-[400px] object-contain transform hover:scale-105 transition-transform duration-300"
                                         />
                                     </div>
+                                </div>
+                                {/* Animated Background Shapes */}
+                                <div className="absolute inset-0 z-0">
+                                    <div className="w-40 h-40 bg-teal-500/20 rounded-full absolute top-10 left-20 animate-float"></div>
+                                    <div className="w-60 h-60 bg-cyan-500/20 rounded-full absolute bottom-20 right-10 animate-float-delay"></div>
                                 </div>
                             </SwiperSlide>
                         </Swiper>
@@ -210,20 +225,48 @@ const Home = () => {
             </section>
 
             {/* Featured Products */}
-            <section className="container mx-auto px-4 py-12 bg-white rounded-2xl shadow-sm">
-                <div className="flex justify-between items-center mb-10">
-                    <h2 className="text-3xl font-bold">Featured Products</h2>
+            <section className="container mx-auto px-4 py-12 bg-gradient-to-r from-gray-50 to-white rounded-2xl shadow-md">
+                <div className="flex  md:flex-row justify-between items-center mb-8">
+                    <h2 className="text-3xl font-bold text-gray-800 mb-4 md:mb-0">
+                        <span className="border-b-4 border-red-500 pb-1">Featured Products</span>
+                    </h2>
                     <Link to="/products">
                         <motion.button
-                            className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-all"
+                            className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-all flex items-center"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
                             View All
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                            </svg>
                         </motion.button>
                     </Link>
                 </div>
-                <ProductCard data={data} />
+
+                {/* Improved overflow container with fade effect */}
+                <div className="relative">
+                    {/* Left fade gradient for scrolling indication */}
+                    <div className="absolute left-0 top-0 h-full w-12 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none hidden md:block"></div>
+
+                    {/* Right fade gradient for scrolling indication */}
+                    <div className="absolute right-0 top-0 h-full w-12 bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none"></div>
+
+                    {/* Scrollable container */}
+                    <div className="overflow-x-auto scrollbar-hide pb-4">
+                        <div className="flex gap-6 py-2 min-w-max">
+                            <ProductCard data={data} />
+                            {/* You can add additional product cards directly here if needed */}
+                        </div>
+                    </div>
+                </div>
+
+                {/* Scroll indicators (dots) */}
+                <div className="flex justify-center gap-2 mt-6">
+                    <span className="h-2 w-8 bg-red-500 rounded-full"></span>
+                    <span className="h-2 w-2 bg-gray-300 rounded-full"></span>
+                    <span className="h-2 w-2 bg-gray-300 rounded-full"></span>
+                </div>
             </section>
 
             {/* Categories Section */}
@@ -238,50 +281,49 @@ const Home = () => {
             </section>
 
             {/* Best Selling Products */}
-            <section className="container mx-auto px-4 py-16">
-                <div className="flex items-center gap-4 mb-6">
-                    <div className="w-1 h-12 bg-red-600 rounded-full"></div>
-                    <span className="text-red-600 font-semibold text-lg">This Month</span>
-                </div>
-                <div className="flex justify-between items-center mb-10">
-                    <h2 className="text-3xl font-bold">Best Selling Products</h2>
-                    <motion.button
-                        className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-all"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                    >
-                        All Products
-                    </motion.button>
-                </div>
-                <div className="grid grid-cols-4 gap-6 sm:grid-cols-1 md:grid-cols-2">
-                    {data?.map((product, index) => (
-                        <motion.div
-                            key={index}
-                            className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all"
-                            whileHover={{ y: -10 }}
+            <section className="container mx-auto px-4 py-12 bg-gradient-to-r from-gray-50 to-white rounded-2xl shadow-md">
+                <div className="flex  md:flex-row justify-between items-center mb-8">
+                    <h2 className="text-3xl font-bold text-gray-800 mb-4 md:mb-0">
+                        <span className="border-b-4 border-red-500 pb-1">Featured Products</span>
+                    </h2>
+                    <Link to="/products">
+                        <motion.button
+                            className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-all flex items-center"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
                         >
-                            <div className="h-48 bg-gray-100 flex items-center justify-center p-4">
-                                <img
-                                    src={product.media?.url || img1}
-                                    alt={product.name}
-                                    className="h-full object-contain"
-                                />
-                            </div>
-                            <div className="p-4">
-                                <h3 className="font-semibold text-lg truncate">{product.name}</h3>
-                                <div className="flex justify-between items-center mt-2">
-                                    <span className="text-red-600 font-bold">${product.price}</span>
-                                    <div className="flex items-center">
-                                        <span className="text-amber-400">★★★★</span>
-                                        <span className="text-gray-400">★</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </motion.div>
-                    ))}
+                            View All
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                            </svg>
+                        </motion.button>
+                    </Link>
+                </div>
+
+                {/* Improved overflow container with fade effect */}
+                <div className="relative">
+                    {/* Left fade gradient for scrolling indication */}
+                    <div className="absolute left-0 top-0 h-full w-12 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none hidden md:block"></div>
+
+                    {/* Right fade gradient for scrolling indication */}
+                    <div className="absolute right-0 top-0 h-full w-12 bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none"></div>
+
+                    {/* Scrollable container */}
+                    <div className="overflow-x-auto scrollbar-hide pb-4">
+                        <div className="flex gap-6 py-2 min-w-max">
+                            <ProductCard data={data} />
+                            {/* You can add additional product cards directly here if needed */}
+                        </div>
+                    </div>
+                </div>
+
+                {/* Scroll indicators (dots) */}
+                <div className="flex justify-center gap-2 mt-6">
+                    <span className="h-2 w-8 bg-red-500 rounded-full"></span>
+                    <span className="h-2 w-2 bg-gray-300 rounded-full"></span>
+                    <span className="h-2 w-2 bg-gray-300 rounded-full"></span>
                 </div>
             </section>
-
             {/* Speaker Promo Section */}
             <section className="container mx-auto px-4 py-12 mb-16">
                 <div className="bg-gradient-to-r from-gray-900 to-black rounded-2xl overflow-hidden">
@@ -337,23 +379,47 @@ const Home = () => {
             </section>
 
             {/* Explore Products */}
-            <section className="container mx-auto px-4 py-12">
-                <div className="flex items-center gap-4 mb-6">
-                    <div className="w-1 h-12 bg-red-600 rounded-full"></div>
-                    <span className="text-red-600 font-semibold text-lg">Our Products</span>
-                </div>
-                <h2 className="text-3xl font-bold mb-10">Explore Our Products</h2>
-                <ProductCard data={data} />
-                <div className="flex justify-center mt-12">
+            <section className="container mx-auto px-4 py-12 bg-gradient-to-r from-gray-50 to-white rounded-2xl shadow-md">
+                <div className="flex  md:flex-row justify-between items-center mb-8">
+                    <h2 className="text-3xl font-bold text-gray-800 mb-4 md:mb-0">
+                        <span className="border-b-4 border-red-500 pb-1">Featured Products</span>
+                    </h2>
                     <Link to="/products">
                         <motion.button
-                            className="bg-red-600 hover:bg-red-700 text-white py-3 px-8 rounded-full font-medium"
+                            className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-all flex items-center"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
-                            View All Products
+                            View All
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                            </svg>
                         </motion.button>
                     </Link>
+                </div>
+
+                {/* Improved overflow container with fade effect */}
+                <div className="relative">
+                    {/* Left fade gradient for scrolling indication */}
+                    <div className="absolute left-0 top-0 h-full w-12 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none hidden md:block"></div>
+
+                    {/* Right fade gradient for scrolling indication */}
+                    <div className="absolute right-0 top-0 h-full w-12 bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none"></div>
+
+                    {/* Scrollable container */}
+                    <div className="overflow-x-auto scrollbar-hide pb-4">
+                        <div className="flex gap-6 py-2 min-w-max">
+                            <ProductCard data={data} />
+                            {/* You can add additional product cards directly here if needed */}
+                        </div>
+                    </div>
+                </div>
+
+                {/* Scroll indicators (dots) */}
+                <div className="flex justify-center gap-2 mt-6">
+                    <span className="h-2 w-8 bg-red-500 rounded-full"></span>
+                    <span className="h-2 w-2 bg-gray-300 rounded-full"></span>
+                    <span className="h-2 w-2 bg-gray-300 rounded-full"></span>
                 </div>
             </section>
 
@@ -422,7 +488,7 @@ const Home = () => {
             </section>
 
             {/* Newsletter */}
-            <section className="container mx-auto px-4 py-16 mb-16">
+            {/* <section className="container mx-auto px-4 py-16 mb-16">
                 <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-12 text-center">
                     <h2 className="text-3xl font-bold text-white mb-4">Subscribe to Our Newsletter</h2>
                     <p className="text-white mb-8 max-w-xl mx-auto">
@@ -439,7 +505,7 @@ const Home = () => {
                         </button>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>
     );
 };
